@@ -36,7 +36,7 @@ describe('API Endpoints', () => {
         test('calculates subtraction correctly', async () => {
             const response = await request(app)
                 .post('/api/subtract')
-                .send({ a: 10, b: 4 });
+                .send({ a: 10, b: 2 });
 
             expect(response.status).toBe(200);
             expect(response.body.result).toBe(6);
